@@ -1,22 +1,24 @@
-ul {
-  border: 2px solid salmon;
-}
-
-li {
-  border: 1px solid red;
-}
-
-.nav-list {
+.columns {
   display: flex;
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 10px;
+  gap: 2rem;
+  width: 90%;
+  border: 10px solid firebrick;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.nav-list li {
-flex-shrink: 1;
+.card {
+  background-color: green;
 }
 
-test
+.columns > * {
+flex: 1 0 0;
+}
+
+@media (min-width: 500px) {
+  .columns{
+    flex-direction: row;
+  }
+}
