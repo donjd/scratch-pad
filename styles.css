@@ -22,3 +22,19 @@ flex: 1 0 0;
     flex-direction: row;
   }
 }
+
+.cards-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1rem 0;
+}
+
+.menu-icon {
+  position: absolute;
+  top:0;
+  right: 0;
+  background-color: red;
+  height: 100%;
+  width: 100px;
+}
