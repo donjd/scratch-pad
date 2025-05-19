@@ -1,0 +1,26 @@
+:root {
+    --redish: hsl(0, 41%, 45%);
+    --rainbow: linear-gradient(hsl(240, 54%, 0%), green);
+    --fallback: yellow;
+}
+
+body {
+    display: flex;
+    gap: 50px;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+}
+
+.color1 {
+    background-color: var(--redish, var(--fallback));
+
+}
+.color2 {
+    background: var(--rainbow, var(--fallback));
+}
+.color3 {
+    background-color: var(--redish, var(--fallback));
+}
