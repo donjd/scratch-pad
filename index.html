@@ -1,56 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Scratch Pad</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-      <h1>Flexbox vs. Grid</h1>
-      <header class="cards-header">
-        <h2>Some cards</h2>
-        <div class="menu-icon"></div>
-      </header>
-      <div class="columns">
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi odio corporis quis sit aliquid delectus nobis repellat. Aliquid suscipit atque a quisquam vitae earum, eos fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor. Aliquid suscipit atque a quisquam vitae earum, eos fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugiat expedita quos totam inventore.</p>
-        </article>
-        <article class="card">
-          <h3>Card 2</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugiat expedita quos totam inventore.</p>
-        </article>
-       
-      </div>
-        
-    </body>
+<html land="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="post">
+      <p>
+        <label for="first_name">First Name: </label>
+        <input type="text" for="first_name" placeholder="Bob" name="first_name">
+      </p>
+      <p>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="55" max="100" step="5">
+      </p>
+      <p>
+        <label for="phone">Phone Number:</label>
+        <input type="tel">
+      </p>
+      <p>
+        <label for="comments">Please leave a comment:</label>
+        <textarea name="comments" id="comments" rows="10" cols="40"></textarea>
+      </p>
+      <p>
+        <label for="car">Pick your favorite car:</label>
+        <select name="car" id="car">
+          <option value="mercedes">Mercedes</option>
+          <option value="vw" selected>Volks Wagon</option>
+          <option value="BMW">BMW</option>
+        </select>
+      </p>
+      <p>
+        <fieldset>
+          <legend>
+            Pick a cool name
+          </legend>
+          <p>
+            <input type="radio" id="carlos" name="cool_name">
+            <label for="carlos">Carlos</label>
+          </p>
+          <p>
+            <input type="radio" id="jimmy" name="cool_name">
+            <label for="jimmy">Jimmy</label>
+          </p>
+          <p>
+            <input type="radio" id="yoyo" name="cool_name" value="yoyo">
+            <label for="yoyo">YoYo</label>
+          </p>
+        </fieldset>
+      </p>
+      <p>
+        <label for="text">Enter text:</label>
+        <input type="text" name="text" id="text" pattern="[A-Za-z\d\.]{6,12}">
+      </p>
+      <p>
+        <label for="telephone">Telephone:</label>
+        <input type="text" id="telephone" name="telephone" pattern="\d{3}-\d{3}-\d{4}|\d{3}\s\d{3}\s\d{4}">
+
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
 </html>
